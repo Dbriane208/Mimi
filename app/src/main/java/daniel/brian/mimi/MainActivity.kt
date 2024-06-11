@@ -104,5 +104,16 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+
+
+    }
+
+    @Preview
+    @Composable
+    fun Preview(modifier: Modifier = Modifier) {
+        MimiTheme {
+
+        }
+
     }
 }

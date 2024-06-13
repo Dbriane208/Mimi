@@ -57,6 +57,7 @@ fun HomeScreen(
             modifier = Modifier
                 .fillMaxWidth()
                 .size(width = 240.dp, height = 100.dp)
+                .padding(10.dp)
         ) {
 
             Row(

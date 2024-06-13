@@ -9,14 +9,14 @@ import daniel.brian.mimi.screens.HomeScreen
 import daniel.brian.mimi.screens.TriviaScreen
 
 @Composable
-fun Navigation(modifier: Modifier = Modifier) {
+fun Navigation() {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = MimiScreens.HomeScreen.name){
         composable(MimiScreens.HomeScreen.name){
             HomeScreen(modifier = Modifier,navController = navController)
         }
         composable(MimiScreens.TriviaScreen.name){
-            TriviaScreen(navController = navController)
+            TriviaScreen()
         }
     }
 }
